@@ -6,9 +6,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid&pc=%23000000">
 <title>Document</title>
 <script></script>
 <style>
+@media only screen and (min-width:1200px){
 body{
 margin: 0;
 padding: 0;
@@ -17,8 +19,8 @@ box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
 }
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 align-items: center;
 }
 .header{
@@ -51,7 +53,7 @@ color: #403F3E;
 font-weight: 500;
 }
 .header a:hover{
-font-weight: 800;
+font-weight: 700;
 }
 .side-header{
 display: flex;
@@ -80,6 +82,12 @@ font-weight: bold;
 border: none;
 background: #FF4F00;
 color: #FFF3E6;
+cursor: pointer;
+}
+.signup:hover{
+    color:#FF4F00;
+    background: #FFF3E6;
+    border: 1px solid #FF4F00;
 }
 .dropdown{
 width: 10px;
@@ -135,7 +143,15 @@ line-height: 27px;
 color: white;
 font-weight: 700;
 }
-
+.email:hover{
+background: #FFFDF9;
+}
+.email-button:hover{
+    color: #FF4F00;
+    border: 1px solid #FF4F00;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
 .google{
 height: 50px;
 border-radius: 25px;
@@ -143,6 +159,9 @@ background: #FFFDF9;
 color: #201515;
 border: 1px solid black;
 margin-left: 10px;
+}
+.google:hover{
+    background:#201515;
 }
 .google-button{
 text-decoration: none;
@@ -153,6 +172,10 @@ color: #201515;
 font-weight: 700;
 display: flex;
 align-items: center;
+}
+.google-button:hover{
+    color:#FFFDF9;
+    transition: all 0.2s ease;
 }
 .text{
 display: flex;
@@ -177,6 +200,7 @@ text-align: center;
 .img video{
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
 .line{
 width: 86%;
 margin: auto;
@@ -353,7 +377,7 @@ width: 700px;
 }
 .last-two a:hover{
     text-decoration: underline;
-}
+}}
 /* --------------------------------------------------------------------------------------- */
 
 /* -----Media query for header----- */
@@ -369,19 +393,20 @@ gap: 20px;
 <body>
 <div class="header">
 <img class="img-zapier" src="images/Header → Link - Go to the Zapier Homepage → SVG.svg" alt="Vector.svg">
+<i class="fa-solid fa-bars"></i>
 <ul>
-<li><a href="#" target="_blank">Product 
+<li><a href="#" target="_blank" class="e">Product 
      <img src="images/chevron-down-solid.svg" alt="chevron-down-solid.svg" class="dropdown">
 </a>
 </li>           
-<li><a href="#" target="_blank">Solutions
+<li><a href="#" target="_blank" class="e">Solutions
 <img src="images/chevron-down-solid.svg" alt="chevron-down-solid.svg" class="dropdown">
 </a></li>
-<li><a href="#" target="_blank">
+<li><a href="#" target="_blank" class="e">
 Resources & Support
 <img src="images/chevron-down-solid.svg" alt="chevron-down-solid.svg" class="dropdown">
 </a></li>
-<li><a href="#" target="_blank">Pricing</a></li>
+<li><a href="#" target="_blank" class="e">Pricing</a></li>
 <div class="side-header">
 <a href="#"><img src="images/Label.svg" alt="Label.svg"></a>
 <li><a href="#" target="_blank">Contact Sales</a></li>
@@ -392,6 +417,7 @@ Resources & Support
 </div>
 <div class="new"></div>
 <hr class="hr">
+<div class="h1-1">
 <h1 class="h1">Easier automation,<br>bigger impact</h1>
 <p class="center-p">Zapier connects your tools to streamline your mission-critical processes.</p>
 <div class="two-button">
@@ -399,7 +425,7 @@ Resources & Support
 <a type="submit" href="#" target="_blank" class="email-button">Start free with email</a></button>
 <button class="google">
 <a type="submit" href="#" target="_blank" class="google-button"><img src="images/span.css-xkrlmq-CustomBrandButton__icon.svg" alt="images/span.css-xkrlmq-CustomBrandButton__icon.svg"> Start free with Google</a></button>
-</div>
+</div></div>
 <div class="text">
 <p><strong>&#10003; Free forever</strong> for core features</p>
 <p><strong>&#10003; More apps</strong> than any other platform</p>
@@ -501,6 +527,7 @@ partners to power critical processes.
     <div class="pagination">
         <a href="#">0-9</a>
         <a href="#">a</a>
+        <i class="fas fa-bars"></i>
         <a href="#">b</a>
         <a href="#">c</a>
         <a href="#">d</a>
@@ -598,7 +625,8 @@ partners to power critical processes.
 </div>
 <div class="last">
     <div class="last-one">
-        <img src="images/Header → Link - Go to the Zapier Homepage → SVG.svg" alt="images/Header → Link - Go to the Zapier Homepage → SVG.svg">
+        <img src="images/Header → Link - Go to the Zapier Homepage → SVG.svg" alt="images/Header → 
+        Link - Go to the Zapier Homepage → SVG.svg">
     </div>
     <div class="last-two">
         <a href=""><h6>&#169; 2023 Zapier Inc.</h6></a>
@@ -609,5 +637,372 @@ partners to power critical processes.
         <a href=""><h6>Privacy</h6></a>
     </div>
 </div>
+<style>
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+    @media(max-width:1200px){
+    body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+align-items: center;
+}
+.header{
+height: 100px;
+position: fixed;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+background: rgb(255, 255, 255);
+width: 100%;
+}
+.header ul{
+display: flex;
+flex-direction: row;
+margin-left: -100px;
+}
+.header ul li{
+list-style: none;
+display: flex;
+justify-content:space-evenly;
+margin-left: 20px;
+}
+.header ul li a{
+font-size: 16px;
+line-height: 70px;
+text-decoration: none;
+opacity: 0.8;
+color: #403F3E;
+font-weight: 500;
+}
+.header a:hover{
+font-weight: 800;
+}
+.side-header{
+display: flex;
+flex-direction: row;
+margin-left: 600px;
+align-items: center;
+}
+.side-header li{
+margin-left: 10px;
+}
+.side-header button{
+margin-left: 20px;
+}
+.img-zapier{
+width: 125px;
+height: 78px;
+margin-left: 0px;
+}
+.signup{
+width: 138px;
+height: 54px;
+line-height: 24px;
+border-radius: 22px;
+font-size: 24px;
+font-weight: bold;
+border: none;
+background: #FF4F00;
+color: #FFF3E6;
+}
+.e{
+    display: none;
+}
+.dropdown{
+width: 10px;
+margin-left: 5px;
+}
+.new{
+    border-bottom: 0.2px solid grey;
+    position: fixed;
+    width: 100%;
+    margin-top: 100px;
+    opacity: 0.4;
+}
+/* ----h1----- */
+.h1{
+height: 400px;
+width: 1400px;
+font-size: 80px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+word-spacing: -10px;
+color: #201515;
+line-height: 80px;
+margin-top: 80px;
+margin-left: 100px;
+}
+.center-p{
+margin-top: -60px;
+text-align: center;
+font-size: 28px;
+margin-left: 516px;
+width: 600px;
+color: #201515;
+}
+.two-button{
+text-align: center;
+margin-top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 260px;
+width: 1100px;
+}
+.email{
+height: 68px;
+border-radius: 34px;
+background: #FF4F00;
+color: #FFFDF9;
+border: none;
+width: 380px;
+}
+.email-button{
+text-decoration: none;
+padding: 11.5px 24px;
+font-size: 28px;
+line-height: 27px;
+color: white;
+font-weight: 700;
+}
+
+.google{
+height: 68px;
+border-radius: 34px;
+background: #FFFDF9;
+color: #201515;
+border: 1px solid black;
+margin-left: 30px;
+width: 380px;
+}
+.google-button{
+text-decoration: none;
+padding: 11.5px 24px;
+font-size: 24px;
+line-height: 27px;
+color: #201515;
+font-weight: 600;
+display: flex;
+align-items: center;
+}
+.text{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+margin-left: 260px;
+width: 1100px;
+}
+.text p{
+color: #2D2E2E;
+padding: 10px 60px;
+font-size: 20px;
+}
+.img{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+width: 1500px;
+}
+.bigmid-img{
+text-align: center;
+margin-left: 840px;
+}
+.img video{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.line{
+width: 86%;
+margin: auto;
+margin-bottom: 160px;
+margin-top: 100px;
+}
+.one{
+display: flex;
+align-items: center;
+}
+.flex-text-image{
+display: flex;
+flex-direction: column;
+width: 80%;
+margin: auto;
+margin-bottom: 100px;
+margin-left: 200px;
+}
+.img2{
+display: flex;
+flex-direction: row;
+}
+
+.text2{
+padding: 20px;
+align-items: start;
+width: 70%;
+margin-left: 100px;
+}
+.three{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: auto;
+align-items: start;
+margin-top: 70px;
+}
+.first,.second,.third{
+margin: 0;
+padding: 0;
+width: 700px;
+}
+.img3 img{
+    width: 1350px;
+    height: 324px;
+    display:flex;
+    justify-content: center;
+}
+
+.lists-app{
+    margin: 30px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #2D2E2E;
+}
+.pagination {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;
+    text-decoration: underline;
+}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.trends-popular-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+    height: 454px;
+    margin: auto;
+    align-items: center;
+}
+.top-searches{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}
+.top-searches h4{
+    font-size: 16px;
+    margin-top: -280px;
+    line-height: 24px;
+    font-weight: 600;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #403F3E;
+}
+.top-searches a{
+    text-align: left;
+    width: 250px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #403F3E;
+    line-height: 
+    36px;
+}
+.top-searches a:hover{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: -210px;
+    align-items: center;
+}
+.footer-one{
+    display: flex;
+    flex-direction: row;
+}
+.footer-one img{
+    margin-left: 10px;
+}
+.footer-two{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.footer-two a{
+    text-decoration: none;
+    color: #403F3E;
+    margin-right: 20px;
+}
+.footer-two a:hover{
+    text-decoration: underline;
+}
+.last{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+.last-one{
+    display: flex;
+    flex-direction: row;
+}
+.last-two{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.last-two a{
+    text-decoration: none;
+    color: #403F3E;
+    margin-right: 20px;
+}
+.last-two a:hover{
+    text-decoration: underline;
+}}
+</style>
 </body>
 </html>
