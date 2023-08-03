@@ -23,15 +23,18 @@ align-items: center;
 }
 .header{
 height: 70px;
+position: fixed;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
+background: rgb(255, 255, 255);
+width: 100%;
 }
 .header ul{
 display: flex;
 flex-direction: row;
-margin-left: -120px;
+margin-left: -100px;
 }
 .header ul li{
 list-style: none;
@@ -65,6 +68,7 @@ margin-left: 20px;
 .img-zapier{
 width: 105px;
 height: 28px;
+margin-left: 0px;
 }
 .signup{
 width: 108px;
@@ -80,6 +84,13 @@ color: #FFF3E6;
 .dropdown{
 width: 10px;
 margin-left: 5px;
+}
+.new{
+    border-bottom: 0.2px solid grey;
+    position: fixed;
+    width: 100%;
+    margin-top: 70px;
+    opacity: 0.4;
 }
 /* ----h1----- */
 .h1{
@@ -207,13 +218,14 @@ padding: 0;
 width: 700px;
 }
 .img3 img{
-    width: 1200px;
+    width: 1350px;
     height: 324px;
-    margin: auto;
+    display:flex;
+    justify-content: center;
 }
 
 .lists-app{
-    margin: 100px 0px;
+    margin: 30px 0px 100px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -225,44 +237,122 @@ width: 700px;
     font-weight: bold;
     color: #2D2E2E;
 }
-.alphabets{
-    margin-top: 20px;
-    text-transform: uppercase;
-    word-spacing: 10px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #403F3E;
+.pagination {
+  display: inline-block;
+  margin-top: 20px;
 }
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;
+    text-decoration: underline;
+}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 .trends-popular-top{
     display: flex;
-    margin-top: 40px;
     flex-direction: row;
     justify-content: center;
-    margin-left: 40px;
+    width: 1200px;
+    height: 454px;
+    margin: auto;
+    align-items: center;
 }
 .top-searches{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
-    justify-content: center;
+    margin-left: -20px;
 }
 .top-searches h4{
     font-size: 16px;
+    margin-top: -280px;
     line-height: 24px;
     font-weight: 600;
     width: 250px;
     text-align: left;
     margin-bottom: 10px;
+    color: #403F3E;
 }
 .top-searches a{
     text-align: left;
     width: 250px;
     text-decoration: none;
     font-size: 16px;
-    line-height: 24px;
     color: #403F3E;
     line-height: 
-    30px;
+    36px;
+}
+.top-searches a:hover{
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: -210px;
+    align-items: center;
+}
+.footer-one{
+    display: flex;
+    flex-direction: row;
+}
+.footer-one img{
+    margin-left: 10px;
+}
+.footer-two{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.footer-two a{
+    text-decoration: none;
+    color: #403F3E;
+    margin-right: 20px;
+}
+.footer-two a:hover{
+    text-decoration: underline;
+}
+.last{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+.last-one{
+    display: flex;
+    flex-direction: row;
+}
+.last-two{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.last-two a{
+    text-decoration: none;
+    color: #403F3E;
+    margin-right: 20px;
+}
+.last-two a:hover{
+    text-decoration: underline;
 }
 /* -----Media query for header----- */
 @media(min-width:1500px){
@@ -278,7 +368,8 @@ gap: 20px;
 <div class="header">
 <img class="img-zapier" src="images/Header → Link - Go to the Zapier Homepage → SVG.svg" alt="Vector.svg">
 <ul>
-<li><a href="#" target="_blank">Product <img src="images/chevron-down-solid.svg" alt="chevron-down-solid.svg" class="dropdown">
+<li><a href="#" target="_blank">Product 
+     <img src="images/chevron-down-solid.svg" alt="chevron-down-solid.svg" class="dropdown">
 </a>
 </li>           
 <li><a href="#" target="_blank">Solutions
@@ -297,6 +388,7 @@ Resources & Support
 </div>
 </ul>
 </div>
+<div class="new"></div>
 <hr class="hr">
 <h1 class="h1">Easier automation,<br>bigger impact</h1>
 <p class="center-p">Zapier connects your tools to streamline your mission-critical processes.</p>
@@ -404,56 +496,116 @@ partners to power critical processes.
 </div>
 <div class="lists-app">
     <div class="title">Apps by Title</div>
-    <div class="alphabets">
-        0-9 a b c d e f g h i j k l m n o p q r s t u v w x y z
-    </div>
+    <div class="pagination">
+        <a href="#">0-9</a>
+        <a href="#">a</a>
+        <a href="#">b</a>
+        <a href="#">c</a>
+        <a href="#">d</a>
+        <a href="#">e</a>
+        <a href="#">f</a>
+        <a href="#">g</a>
+        <a href="#">h</a>
+        <a href="#">i</a>
+        <a href="#">j</a>
+        <a href="#">k</a>
+        <a href="#">l</a>
+        <a href="#">m</a>
+        <a href="#">n</a>
+        <a href="#">o</a>
+        <a href="#">p</a>
+        <a href="#">q</a>
+        <a href="#">r</a>
+        <a href="#">s</a>
+        <a href="#">t</a>
+        <a href="#">u</a>
+        <a href="#">v</a>
+        <a href="#">w</a>
+        <a href="#">x</a>
+        <a href="#">y</a>
+        <a href="#">z</a>
+      </div>
+      
 </div>
     <div class="trends-popular-top">
-        <div class="top-searches">
+        <div class="top-searches" style="margin-top: -30px;">
             <h4>Top Searches</h4>
                 <a href="#">Slack Integrations</a>
                 <a href="#">Salesforce Integrations</a>
                 <a href="#">Hubspot CRM Integrations</a>
                 <a href="#">Paypal Integrations</a>
                 <a href="#">Asana Integrations</a>
-                <a href="#">Show more</a>
+                <a href="#" style="text-decoration: underline;">Show more</a>
+                
         </div>
-        <div class="top-searches">
-            <h4>Top Searches</h4>
-                <a href="#">Slack Integrations</a>
-                <a href="#">Salesforce Integrations</a>
-                <a href="#">Hubspot CRM Integrations</a>
-                <a href="#">Paypal Integrations</a>
-                <a href="#">Asana Integrations</a>
-                <a href="#">Show more</a>
+        <div class="top-searches" style="margin-top: -30px;">
+            <h4>Popular Apps</h4>
+                <a href="#">Dropbox</a>
+                <a href="#">Google Sheets</a>
+                <a href="#">DocuSign</a>
+                <a href="#">WordPress</a>
+                <a href="#">Office 365</a>
+                <a href="#" style="text-decoration: underline;">Show more</a>
         </div>
-        <div class="top-searches">
-            <h4>Top Searches</h4>
-                <a href="#">Slack Integrations</a>
-                <a href="#">Salesforce Integrations</a>
-                <a href="#">Hubspot CRM Integrations</a>
-                <a href="#">Paypal Integrations</a>
-                <a href="#">Asana Integrations</a>
-                <a href="#">Show more</a>
+        <div class="top-searches" style="margin-top: -30px;">
+            <h4>Trending Apps</h4>
+                <a href="#">Twitch</a>
+                <a href="#">Printful</a>
+                <a href="#">Microsoft To-Do</a>
+                <a href="#">Microsoft Outlook</a>
+                <a href="#">Medium</a>
+                <a href="#" style="text-decoration: underline;">Show more</a>
         </div>
-        <div class="top-searches">
-            <h4>Top Searches</h4>
-                <a href="#">Slack Integrations</a>
-                <a href="#">Salesforce Integrations</a>
-                <a href="#">Hubspot CRM Integrations</a>
-                <a href="#">Paypal Integrations</a>
-                <a href="#">Asana Integrations</a>
-                <a href="#">Show more</a>
+        <div class="top-searches" style="margin-top:-24px;">
+            <h4>Top Apps by Category</h4>
+                <a href="#">Project Management</a>
+                <a href="#">Calendar</a>
+                <a href="#">Email</a>
+                <a href="#">CRM (Customer Relationship Management)</a>
+                <a href="#">Marketing Automation</a>
+                <a href="#" style="text-decoration: underline;">Show more</a>
         </div>
-        <div class="top-searches">
-            <h4>Top Searches</h4>
-                <a href="#">Slack Integrations</a>
-                <a href="#">Salesforce Integrations</a>
-                <a href="#">Hubspot CRM Integrations</a>
-                <a href="#">Paypal Integrations</a>
-                <a href="#">Asana Integrations</a>
-                <a href="#">Show more</a>
+        <div class="top-searches" style="margin-top: -32px;">
+            <h4>Our Best Content</h4>
+                <a href="#">Best Video Conferencing Apps</a>
+                <a href="#">Best Email Apps</a>
+                <a href="#">Best CRM Apps</a>
+                <a href="#">Best Note Taking Apps</a>
+                <a href="#">Best Calendar Apps</a>
+                <a href="#" style="text-decoration: underline;">Show more</a>
         </div>
     </div>
+<div class="footer">
+    <div class="footer-one">
+    <img src="images/Heading 1.svg" alt="Heading 1">
+    <img src="images/heading 2.svg" alt="heading 2">
+    <img src="images/heading3.svg" alt="heading3.svg">
+    <img src="images/heading4.svg" alt="heading4.svg">
+    <img src="images/heading5.svg" alt="heading5.svg">
+    <img src="images/heading6.svg" alt="heading6.svg">
+</div>
+<div class="footer-two">
+    <a href="#"><h5>Pricing</h5></a>
+    <a href="#"><h5>Help</h5></a>
+    <a href="#"><h5>Developer Platform</h5></a>
+    <a href="#"><h5>Press</h5></a>
+    <a href="#"><h5>Jobs</h5></a>
+    <a href="#"><h5>Zapier for Companies</h5></a>
+    <a href="#"><h5>Transfer</h5></a>
+</div>
+</div>
+<div class="last">
+    <div class="last-one">
+        <img src="images/Header → Link - Go to the Zapier Homepage → SVG.svg" alt="images/Header → Link - Go to the Zapier Homepage → SVG.svg">
+    </div>
+    <div class="last-two">
+        <a href=""><h6>&#169; 2023 Zapier Inc.</h6></a>
+        <a href=""><h6>Manage cookies</h6></a>
+        <hr>
+        <a href=""><h6>Legal</h6></a>
+        <hr>
+        <a href=""><h6>Privacy</h6></a>
+    </div>
+</div>
 </body>
 </html>
