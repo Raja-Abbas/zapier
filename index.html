@@ -420,26 +420,28 @@ Resources & Support
 </div>
 <div class="new"></div>
 <hr class="hr">
+<div class="all">
 <div class="h1-1">
-<h1 class="h1">Easier automation,<br>bigger impact</h1>
+<h1 class="h1" id="one">Easier automation,<br>bigger impact</h1>
 <p class="center-p">Zapier connects your tools to streamline your mission-critical processes.</p>
 <div class="two-button">
 <button class="email">
-<a type="submit" href="#" target="_blank" class="email-button">Start free with email</a></button>
+<a type="submit" href="https://zapier.com/sign-up" target="_blank" class="email-button">Start free with email</a></button>
 <button class="google">
-<a type="submit" href="#" target="_blank" class="google-button"><img src="images/span.css-xkrlmq-CustomBrandButton__icon.svg" alt="images/span.css-xkrlmq-CustomBrandButton__icon.svg"> Start free with Google</a></button>
+<a type="submit" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?" target="_blank" class="google-button"><img src="images/span.css-xkrlmq-CustomBrandButton__icon.svg" alt="images/span.css-xkrlmq-CustomBrandButton__icon.svg"> Start free with Google</a></button>
 </div></div>
 <div class="text">
 <p><strong>&#10003; Free forever</strong> for core features</p>
 <p><strong>&#10003; More apps</strong> than any other platform</p>
 </div>
 <div class="img">
-<video width="1170px" height="658px" controls>
+<video width="1170px" height="658px" controls preload="auto">
 <source src="https://res.cloudinary.com/zapier-media/video/upload/q_auto/f_auto/v1686662583/Homepage/automation_isnt_magic_wf4k5d.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </div>
 <hr class="line">
+<div class="all-one">
 <div class="flex-text-image">
 <div class="img2">
 <img class="w" src="images/zapier-home-usecase_syh9ch.png.svg" alt="zapier-home-usecase_syh9ch.png.svg">
@@ -482,6 +484,7 @@ you already love
 platform, so you can optimize the tools you use.
 </p><br><br>
 <div class="one" style="text-decoration: underline;color: #2D2E2E;">Explore by app <img style="margin-left: 4px;" src="images/SVG.png" alt="images/SVG.png"></div>
+</div>
 </div>
 </div>
 </div>
@@ -642,6 +645,7 @@ partners to power critical processes.
         <hr>
         <a href=""><h6>Privacy</h6></a>
     </div>
+</div>
 </div>
 <style>
     /* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -1068,6 +1072,161 @@ width: 600px;
 .last-two a:hover{
     text-decoration: underline;
 }}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:480px){
+.all-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+.h1-1{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 360%;
+   }
+   .h1{
+height: 400px;
+width: fit-content;
+margin: auto;
+display: flex;
+justify-self: center;
+margin-top: 100px;
+}
+.center-p{
+display: flex;
+justify-self: center;
+margin: auto;
+margin-top: -50px;
+}
+.side-header a{
+    display: none;
+}
+.two-button{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    gap: 20px;
+}
+.text{
+    margin: auto;
+    margin-left: 250px;
+}
+.img{
+    display: block;
+    width: auto;
+    height: 600px;
+    margin: auto;
+    margin-left: 100px;
+}
+video{
+    width: 1000px;
+    height: 600px;
+}
+.flex-text-image{
+    display: flex;
+    flex-direction: column;
+    width: 250%;
+}
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .w{
+        margin: auto;
+    }
+    .three{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400%;
+        margin-left: 500px;
+    }
+    .z{
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 500px;
+    }
+    .trends-popular-top{
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+        margin-top: 1000px;
+        margin-left: 100px;
+    }
+    .top-searches h4{
+        font-size: 60px;
+        line-height: 70px;
+        width: 700px;  
+        margin-top: -210px;
+    }
+    .top-searches a{
+        font-size: 30px;
+    }
+    .footer{
+        display: none;
+    }
+    .last{
+        display: none;
+    }
+    .img3{
+        margin: auto;
+        margin-left: -300px;
+    }
+}
+
+@media(max-width:400px){
+    .h1-1{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 380%;
+    }
+    .flex-text-image{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+.img{
+    display: block;
+    width: auto;
+    height: 600px;
+    margin: auto;
+}
+video{
+    width: 900px;
+    height: 600px;
+}
+.text{
+    margin: auto;
+    margin-left: 150px;
+}
+.three{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400%;
+    }
+    .z{
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 250px;
+    }
+}
+@media(min-width:1800px){
+    .img3{
+        margin-left: 200px;
+    }
+}
 </style>
 </body>
 </html>
